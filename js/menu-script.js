@@ -121,16 +121,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (filterType === 'Todas') {
           card.style.display = 'flex';
         } else if (filterType === 'Hamburguesas') {
-          if (card.querySelector('h3').textContent.includes('Pukona') || 
-              card.querySelector('h3').textContent.includes('BBQ') ||
-              card.querySelector('h3').textContent.includes('Veggie')) {
+          if (card.querySelector('h3').textContent.includes('Especial') || 
+              card.querySelector('h3').textContent.includes('Burguer')) {
             card.style.display = 'flex';
           } else {
             card.style.display = 'none';
           }
         } else if (filterType === 'Sándwiches') {
-          if (card.querySelector('h3').textContent.includes('Pollo') || 
-              card.querySelector('h3').textContent.includes('Vegetal')) {
+          if (card.querySelector('h3').textContent.includes('Sandwich') || 
+              card.querySelector('h3').textContent.includes('mila')) {
             card.style.display = 'flex';
           } else {
             card.style.display = 'none';
