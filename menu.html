@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú - La Pukona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu-styles.css">
+</head>
+<body>
+  <!-- Botón hamburguesa -->
+  <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+
+  <!-- Menú lateral -->
+  <nav class="side-menu">
+    <div class="menu-header-side">
+      <span class="site-name">La Pukona</span>
+      <button class="close-btn" aria-label="Cerrar menú">&times;</button>
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header class="main-header">
+      <div class="logo">
+        <i class="fas fa-hamburger"></i>
+        <img src="img/logo.JPG">
+      </div>
+      <h1>Menú de La Pukona</h1>
+      <p class="tagline">Descubre nuestras deliciosas creaciones</p>
+      
+      <div class="filters">
+        <button class="filter-btn active">Todas</button>
+        <button class="filter-btn">Hamburguesas</button>
+        <button class="filter-btn">Sándwiches</button>
+      </div>
+    </header>
+    
+    <main>
+      <div class="menu-grid">
+        <!-- Hamburguesa 1 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/burger1.jpg" alt="Hamburguesa Clásica">
+            <div class="badge">Más vendida</div>
+          </div>
+          <div class="burger-info">
+            <h3>Clásica Pukona</h3>
+            <p>Carne 100% res, queso cheddar, lechuga fresca, tomate, cebolla y salsa especial.</p>
+            <div class="price">$1,200</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+        
+        <!-- Hamburguesa 2 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/burger2.jpg" alt="Hamburguesa BBQ">
+            <div class="badge">Nuevo</div>
+          </div>
+          <div class="burger-info">
+            <h3>BBQ Explosión</h3>
+            <p>Doble carne, bacon crujiente, cebolla caramelizada, queso ahumado y salsa BBQ casera.</p>
+            <div class="price">$1,350</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+        
+        <!-- Hamburguesa 3 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/burger3.jpg" alt="Hamburguesa Picante">
+          </div>
+          <div class="burger-info">
+            <h3>Pukona Picante</h3>
+            <p>Carne sazonada, jalapeños, queso pepper jack, salsa picante y guacamole.</p>
+            <div class="price">$1,300</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+        
+        <!-- Hamburguesa 4 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/burger4.jpg" alt="Hamburguesa Veggie">
+            <div class="badge">Vegetariana</div>
+          </div>
+          <div class="burger-info">
+            <h3>Veggie Delight</h3>
+            <p>Medallón de garbanzos, queso vegano, aguacate, espinaca y tomate seco.</p>
+            <div class="price">$1,250</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+        
+        <!-- Hamburguesa 5 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/burger5.jpg" alt="Hamburguesa Especial">
+            <div class="badge">Recomendada</div>
+          </div>
+          <div class="burger-info">
+            <h3>Especial Pukona</h3>
+            <p>Triple carne, triple queso, bacon, huevo frito, cebolla crispy y salsa secreta.</p>
+            <div class="price">$1,600</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+        
+        <!-- Sandwich 1 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/sandwich1.jpg" alt="Sandwich de Pollo">
+          </div>
+          <div class="burger-info">
+            <h3>Pollo Crujiente</h3>
+            <p>Pollo empanizado, lechuga, tomate, mayonesa de ajo y pan artesanal.</p>
+            <div class="price">$1,000</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+        
+        <!-- Sandwich 2 -->
+        <div class="burger-card">
+          <div class="burger-img">
+            <img src="img/sandwich2.jpg" alt="Sandwich Vegetal">
+            <div class="badge">Vegetariano</div>
+          </div>
+          <div class="burger-info">
+            <h3>Vegetal Fresco</h3>
+            <p>Pan integral, aguacate, queso de cabra, vegetales asados y pesto de albahaca.</p>
+            <div class="price">$950</div>
+            <button class="order-btn">
+              <i class="fas fa-shopping-cart"></i> Ordenar ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 La Pukona - Todos los derechos reservados</p>
+    </footer>
+  </div>
+  
+  <!-- Panel de Pedido -->
+  <div class="order-panel">
+    <div class="order-content">
+      <button class="close-panel">&times;</button>
+      <!-- Contenido dinámico -->
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/menu-script.js"></script>
+</body>
+</html>
