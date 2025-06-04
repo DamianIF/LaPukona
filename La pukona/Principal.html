@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pukona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-btn");
+    const closeBtn = document.querySelector(".close-btn");
+    const sideMenu = document.querySelector(".side-menu");
+    const menuLinks = document.querySelectorAll(".side-menu a");
+
+    // Abrir menú
+    menuBtn.addEventListener("click", () => {
+      sideMenu.style.right = "0";
+      menuBtn.style.display = "none"; // Oculta el botón ☰
+    });
+
+    // Función para cerrar menú y mostrar ☰ de nuevo
+    function cerrarMenu() {
+      sideMenu.style.right = "-250px";
+      menuBtn.style.display = "block";
+    }
+
+    // Cerrar con botón ×
+    closeBtn.addEventListener("click", cerrarMenu);
+
+    // Cerrar al hacer clic en un enlace
+    menuLinks.forEach(link => {
+      link.addEventListener("click", cerrarMenu);
+    });
+  });
+</script>
+
+<script>
+  function toggleMenu() {
+    const sideMenu = document.getElementById('sideMenu');
+    sideMenu.classList.toggle('open');
+  }
+</script>
+
+
+<body>
+
+<!-- Botón hamburguesa -->
+<button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+
+<!-- Menú lateral -->
+<nav class="side-menu">
+  <div class="menu-header">
+    <span class="site-name">La Pukona</span>
+    <button class="close-btn" aria-label="Cerrar menú">&times;</button>
+  </div>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+
+
+  <div class="encabezado">
+    <img src="img/Captura.JPG" alt="Logo de La Pukona">
+    <h1>La Pukona</h1>
+  </div>
+
+  <main>
+    <section class="quienes-somos">
+      <div class="mapa">
+        <img src="img/ubicacion.jpg" alt="Ubicación de La Pukona">
+      </div>
+      <div class="historia">
+        <h2>Quiénes somos</h2>
+        <p>
+          En <strong>La Pukona</strong> celebramos la pasión por las hamburguesas al estilo retro americano con un toque único y local. Fundada con el sueño de traer un sabor auténtico a nuestra ciudad, La Pukona nació en un pequeño local de barrio, donde cada hamburguesa era una obra de amor y sabor.
+        </p>
+        <p>
+          Hoy seguimos con esa misma energía, sirviendo comida deliciosa, con ingredientes frescos, y manteniendo vivo el espíritu de los diners de los años 50. ¡Te esperamos para que vivas la experiencia Pukona!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 La Pukona. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sideMenu = document.getElementById('side-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    menuToggle.addEventListener('click', () => {
+      sideMenu.style.right = '0';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      sideMenu.style.right = '-250px';
+    });
+  </script>
+</body>
+</html>
